@@ -2,6 +2,7 @@ package com.example.springboot;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -36,4 +37,10 @@ public class CityController {
 	  public List<City> index() {
         return cities;
   	}
+
+    @RequestMapping("/cities/{id}")
+    public City cityById(
+      @PathVariable("id") int id) {
+        return cities.get(id-1);
+    }
 }
