@@ -36,4 +36,11 @@ public class CityController {
 	  public List<City> index() {
         return cities;
   	}
+
+      @RequestMapping("/cities/{id}")
+      public City cityById(){
+          @PathVariable("id") long id) {
+          return cities.get(id);
+          }      
+    }
 }
