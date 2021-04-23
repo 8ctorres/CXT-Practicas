@@ -63,7 +63,7 @@ public class CityController {
     }
 
 	  @RequestMapping("/cities")
-	  public List<City> index() {
+	  public List<City> city() {
         return cities;
   	}
 
@@ -74,7 +74,7 @@ public class CityController {
     }
 
     @RequestMapping("/countries")
-	  public List<Country> index() {
+	  public List<Country> country() {
         return countries;
   	}
 
