@@ -103,6 +103,7 @@ public class CityController {
     public Country countryById(
       @PathVariable("id") int id) {
         return countries.get(id-1);
+      }
 
     @RequestMapping("/communities")
     public List<Community> allCommunities(){
