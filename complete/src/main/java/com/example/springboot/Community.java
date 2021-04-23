@@ -1,11 +1,11 @@
 package com.example.springboot;
 
-public class Comunnitie{
+public class Community{
     private final int id;
     private final String name;
     private final String capital;
 
-    public Comunnitie(int id, String name, String capital){
+    public Community(int id, String name, String capital){
         this.id = id;
         this.name = name;
         this.capital = capital;
