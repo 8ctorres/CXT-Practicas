@@ -1,1 +1,4 @@
-cxt_spring_boot
+Practicas CXT
+
+Carlos Torres Paz
+Ismael Verde Costas
